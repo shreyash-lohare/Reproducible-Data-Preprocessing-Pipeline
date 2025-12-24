@@ -1,0 +1,60 @@
+dataset:
+  name: adult
+  raw_train_path: data/raw/adult/adult.data
+  raw_test_path: data/raw/adult/adult.test
+  column_names:
+    - age
+    - workclass
+    - fnlwgt
+    - education
+    - education_num
+    - marital_status
+    - occupation
+    - relationship
+    - race
+    - sex
+    - capital_gain
+    - capital_loss
+    - hours_per_week
+    - native_country
+    - income
+  target_column: income
+  categorical_columns:
+    - workclass
+    - education
+    - marital_status
+    - occupation
+    - relationship
+    - race
+    - sex
+    - native_country
+  numeric_columns:
+    - age
+    - fnlwgt
+    - education_num
+    - capital_gain
+    - capital_loss
+    - hours_per_week
+
+preprocessing:
+  drop_duplicates: true
+  missing_value_strategy:
+    numeric: median
+    categorical: most_frequent
+  categorical_encoding: onehot
+  normalize_numeric: true
+  test_size: 0.2
+  val_size: 0.1
+  random_seed: 42
+
+paths:
+  output_dir: outputs
+  processed_train: outputs/train.csv
+  processed_val: outputs/val.csv
+  processed_test: outputs/test.csv
+
+validation:
+  report_path: outputs/validation_report.json
+
+logging:
+  log_file: outputs/pipeline.log

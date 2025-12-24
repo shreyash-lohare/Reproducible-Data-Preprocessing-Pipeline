@@ -1,0 +1,42 @@
+{
+  "shape": {
+    "rows": 48842,
+    "columns": 15
+  },
+  "schema": {
+    "status": "pass",
+    "missing_columns": [],
+    "extra_columns": []
+  },
+  "missing_values": {
+    "age": 0,
+    "workclass": 0,
+    "fnlwgt": 0,
+    "education": 0,
+    "education_num": 0,
+    "marital_status": 0,
+    "occupation": 0,
+    "relationship": 0,
+    "race": 0,
+    "sex": 0,
+    "capital_gain": 0,
+    "capital_loss": 0,
+    "hours_per_week": 0,
+    "native_country": 0,
+    "income": 0
+  },
+  "duplicate_rows": {
+    "count": 52,
+    "status": "warn"
+  },
+  "label_distribution": {
+    "counts": {
+      "<=50K": 37155,
+      ">50K": 11687
+    },
+    "proportion": {
+      "<=50K": 0.7607,
+      ">50K": 0.2393
+    }
+  }
+}

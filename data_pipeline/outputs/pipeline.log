@@ -1,0 +1,13 @@
+2025-12-24 22:31:11,866 - INFO - Loaded raw dataset: 48842 rows, 15 columns
+2025-12-24 22:31:11,898 - INFO - Validation complete. Report saved to outputs/validation_report.json
+2025-12-24 22:31:11,898 - INFO - Rows: 48842, Columns: 15
+2025-12-24 22:31:11,898 - INFO - Duplicate rows: 52
+2025-12-24 22:31:12,468 - INFO - Loaded raw dataset: 48842 rows, 15 columns
+2025-12-24 22:31:12,508 - INFO - Dropped 52 duplicate rows
+2025-12-24 22:31:12,576 - INFO - Applied one-hot encoding to 8 categorical columns
+2025-12-24 22:31:12,586 - INFO - Normalized 6 numeric columns
+2025-12-24 22:31:12,603 - INFO - Split data into train/val/test shapes: (34153, 109) / (4879, 109) / (9758, 109)
+2025-12-24 22:31:12,603 - INFO - Rows before cleaning: 48842, after: 48790
+2025-12-24 22:31:13,646 - INFO - Saved processed train to outputs/train.csv
+2025-12-24 22:31:13,646 - INFO - Saved processed val to outputs/val.csv
+2025-12-24 22:31:13,647 - INFO - Saved processed test to outputs/test.csv
